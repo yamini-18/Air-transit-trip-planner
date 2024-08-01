@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tourist places</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+            header {
+                        background-color: DarkCyan;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        text-align: center;
+                        font-size: 35px;
+                        color: white;
+                        height: 85px;
+                        }
+            nav {
+                        font-size: 20px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+                }
+            button {
+                        padding: 10px 20px;
+                        margin-right: 5px;
+                        margin: 5px;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 4px;
+                        background-color:  DarkCyan;
+                        color: #fff;
+                        font-size: 16px;
+                        }
+            .avatar {
+                        vertical-align: middle;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        margin: 0px 0px 0px 0px ;
+                }
+
+            .text-center {
+                        text-align: center;
+                        background-color: #d8d8d8;
+                        font-family: Arial;
+                        color: darkcyan;
+                        font-size: 30px ;
+                        border-radius: 6px;
+                        padding: 12px;"
+                        }   
+            .error-message {
+                color: red;
+                margin-top: 10px;
+            }
+
+            .container {
+                    max-width: 1200px;
+                    margin-top: 0px auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 50px;
+                    padding: 10px 10px 10px  ;
+                    background-color: #efefef;
+                    font-size: 20px;
+                    color: rgb(58, 58, 58);
+                    box-shadow: 0 0 10px #0000001a;
+                    border-radius: 10px;
+            }
+
+            
+
+            input[type=text], [type=email],[type=number], [type=time], [type=datetime-local], select , textarea {
+                    
+                    padding: 10px 10px 10px 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    resize: inline;
+                    width: 95%;
+                    font-family: Arial;
+
+              }
+            input [type=radio]{
+                    padding: 10px 10px 10px 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    resize: inline;
+                    width: 95%;
+                    font-family: Arial;
+                    display: inline;
+                    color: darkcyan;
+            }
+
+            .input-group {
+                    display: flex;
+                    padding: 22px;
+                    font-size: 14px;
+                    font-family: Arial;
+                    align-items: stretch;
+            }
+            label {
+                    padding: 12px 12px 12px 0;
+                    display: inline;
+            }
+            .col-20 {
+                    float: inherit;
+                    width: 32%;
+                    padding: 0px 0px 0px 18px;
+                    margin-top: 15px;
+            }
+
+            .col-80 {
+                    float: right;
+                    width: 65%;
+                    margin-top: 6px;
+                   
+            }
+            .row::after {
+                    content: "";
+                    display: inline;
+                    clear: both;
+                    margin-bottom: 10px;
+            }
+            .col-50 {
+                width: 50%;
+                float: left;
+                display: inline-flex;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .text-center {
+                    text-align: center;
+                    align-content: flex-start;
+            }
+            .form-control{
+                    width: 100%;
+                    padding: 20px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                    resize: vertical;
+            }
+            select{
+                    padding: 14px 14px 14px 14px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    resize: inline;
+                    width: 95%;
+                    font-family: Arial;
+            }
+            .hidden-field {
+                    display: none;
+                    }
+    </style>
+    </head>
+
+    <body background="bg.jpg ">
+        <header>
+            <b>Air Transit Trip Planner</b>
+            <!-- Include any navigation elements here -->
+        </header>
+    
+          <nav class="navbar navbar-expand-lg navbar-default bg-light border-bottom">
+            <ul class="nav navbar-nav">
+              <li ><a href="Mainpage.html"> Home </a></li>
+              <li class="active"><a href="tourist_places.html"> Services </a></li>
+              <li><a href="#"> About us </a></li>
+              <li><a href="#"> Contact us </a></li>
+            </ul>
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <button  type="button" style="background-color: darkcyan; color: white; position: inherit;">
+                    <a href="Login_and_signup_page.html" style="color: #f1f1f1;" >Login/Sign up</a>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <a href="profile.html"><img src="https://simg.nicepng.com/png/small/136-1366211_group-of-10-guys-login-user-icon-png.png" 
+                    alt="Avatar" class="avatar"></a>            
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="container" >
+            <form id="transitForm" > 
+                <h1 class="text-center"><b> Find Tourist Places /Hotels /Stays </b></h1>
+                <div class="row"> 
+                    <div class="col-50">
+                        <div class="col-20">
+                            <label for="arrivalTime">Arrival Time :</label>
+                        </div>
+                        <div class="col-80">
+                            <input type="datetime-local" id="arrivalTime" required>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="col-20">
+                            <label for="departureTime">Departure Time :</label>
+                        </div>
+                        <div class="col-80">
+                            <input type="datetime-local" id="departureTime" required>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="row " >
+                    <label style="float: inherit; padding: 0px 0px 0px 18px;margin-top: 15px; margin-bottom: 25px;">
+                        Do you want to visit tourist places nearby?</label>
+
+                    <span style="margin-left: 50px; margin-right: 25px; margin-top: 15px;"> <input type="radio" id="visitYes" name="visit" onclick="showExploreField()" > Yes </span> 
+                    <span style="margin-left: 50px; margin-right: 25px; margin-top: 15px;"> <input type="radio" id="visitNo" name="visit" onclick="showHotelField()" > No </span>
+                </div>
+                <div class="hidden-field" id="exploreField">
+                    <div class="row"> 
+                        <div class="col-50">
+                            <div class="col-20">
+                                <label for="transitHour">Transit Hour:</label>
+                            </div>
+                            <div class="col-80">
+                                <input type="number" id="transitHour" placeholder="Enter transit hour" required>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="errorMessage" class="error-message"></p>
+                    <div style="align-items: center;">
+                        <button  ><a href="explore_cities.html" style="color: white;">
+                            Explore Tourist Places</a></button>
+                    </div>
+                </div>
+              
+                <div class="hidden-field" id="hotelField">
+                    <div class="row"> 
+                        <label style="float: inherit; padding: 0px 0px 0px 18px;margin-top: 25px;">
+                                Look for hotels/stays?</label>
+                        
+                        
+                        <span style="margin-left: 50px; margin-right: 25px; margin-top: 15px;"> <button ><a href= "Hotel_booking.html" style="color: white;"> Hotel Booking</a></button></span>
+                        <span style="margin-left: 50px; margin-right: 25px; margin-top: 15px;"> <button ><a href= "Mainpage.html" style="color: white;">Return to Home Page</a></button></span>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+
+        <script src="tourist_places.js"></script>
+    </body>
+</html>     
+                            
